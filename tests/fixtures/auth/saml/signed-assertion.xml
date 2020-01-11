@@ -1,0 +1,46 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Destination="https://f78af501.ngrok.io/login/callback" ID="FIMRSP_c35dc145-015c-167b-a9a4-a3354cb7f8a0" IssueInstant="2017-06-20T02:38:40Z" Version="2.0">
+  <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://test.com/auth/sps/samlidp/saml20</saml:Issuer>
+  <samlp:Status>
+    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+  </samlp:Status>
+  <saml:Assertion ID="pfxe81fdd52-457e-8f05-0023-442ca8c9f9b9" IssueInstant="2017-06-20T02:38:40Z" Version="2.0">
+    <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://test.com/auth/sps/samlidp/saml20</saml:Issuer><ds:Signature>
+    <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <ds:Reference URI="#pfxe81fdd52-457e-8f05-0023-442ca8c9f9b9"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>CNfITOFkdNydY3u9mBOXExVND3s=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>eiXDRqQxYaFXmLhJeOGjbG7twIjp2k97ELwBSdQmFMMNOvXa6kTwu5JIuTACdF/FSeV1ZZMN6Zl85iKs0I+4hncSbNrFEkLpjPtJuIU811AG9PvZgaP4/CEilAV7GLcA/WoT+UYNnXi0ws64giOn9PmBs5KnN/micoRTWTYR/O0=</ds:SignatureValue>
+    <ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIC4DCCAkmgAwIBAgIBADANBgkqhkiG9w0BAQ0FADCBjDELMAkGA1UEBhMCdXMxDjAMBgNVBAgMBVRleGFzMQwwCgYDVQQKDANJQk0xETAPBgNVBAMMCGFicmF0bmFwMQ8wDQYDVQQHDAZBdXN0aW4xDzANBgNVBAsMBkF1c3RpbjEqMCgGCSqGSIb3DQEJARYbYWJoYXkucmF0bmFwYXJraGlAZ21haWwuY29tMB4XDTE3MDYyNjE2MjQxNFoXDTE4MDYyNjE2MjQxNFowgYwxCzAJBgNVBAYTAnVzMQ4wDAYDVQQIDAVUZXhhczEMMAoGA1UECgwDSUJNMREwDwYDVQQDDAhhYnJhdG5hcDEPMA0GA1UEBwwGQXVzdGluMQ8wDQYDVQQLDAZBdXN0aW4xKjAoBgkqhkiG9w0BCQEWG2FiaGF5LnJhdG5hcGFya2hpQGdtYWlsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwZQC3UzAxvK4T/nwXGzTnoWS2xVg5ipGpC5bFBwbMPFY8WqTDGUxHEiHeEB5aLUZrhAUPL81L+gzZ/tjYHMNMKRzj1PfpZfOS9BRmv+Xls9Olo0qQKlnT398L6I14Pfjrbd5Cx7JkIi+ZX3USSc/pB8GfCzyA1hEKeN80JahFykCAwEAAaNQME4wHQYDVR0OBBYEFK5pmUg/Uv4IYq+dlV8Irb36mgnKMB8GA1UdIwQYMBaAFK5pmUg/Uv4IYq+dlV8Irb36mgnKMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQENBQADgYEAMSMquGHk9F/N+iH6bmwifh1v7r3hgUff5DrjZsCt352akzCRL6Xzaz1h5nkV5yVwwWhbDsRv3h2JzdTdRbacIbYZaTddIpNV/p2lWaYLXsSnw0HQ8QDp1cXob5kpR2qI3fetWAZ0LqDo+KNQAGD18VBDgQub/RJxKbuveVFGtww=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
+    <saml:Subject>
+      <saml:NameID Format="urn:ibm:names:ITFIM:5.1:accessmanager">Harry.Potter@test.com</saml:NameID>
+      <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+        <saml:SubjectConfirmationData NotOnOrAfter="2027-06-20T02:48:40Z" Recipient="https://f78af501.ngrok.io/login/callback"/>
+      </saml:SubjectConfirmation>
+    </saml:Subject>
+    <saml:Conditions NotBefore="2017-06-20T02:37:39Z" NotOnOrAfter="2027-06-20T02:48:40Z">
+      <saml:AudienceRestriction>
+        <saml:Audience>passport-test-com</saml:Audience>
+      </saml:AudienceRestriction>
+    </saml:Conditions>
+    <saml:AuthnStatement AuthnInstant="2017-06-20T02:38:40Z" SessionIndex="uuidc2e4a572-015c-1e66-8ba2-a3354cb7f8a0" SessionNotOnOrAfter="2027-06-20T15:38:40Z">
+      <saml:AuthnContext>
+        <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml:AuthnContextClassRef>
+      </saml:AuthnContext>
+    </saml:AuthnStatement>
+    <saml:AttributeStatement>
+      <saml:Attribute Name="firstName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xsi:type="xs:string">Harry</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xsi:type="xs:string">1A0000897</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="lastName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xsi:type="xs:string">Potter</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="emailaddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xsi:type="xs:string">Harry.Potter@test.com</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml:AttributeValue xsi:type="xs:string">HARRY A. POTTER</saml:AttributeValue>
+      </saml:Attribute>
+    </saml:AttributeStatement>
+  </saml:Assertion>
+</samlp:Response>

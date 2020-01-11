@@ -1,0 +1,109 @@
+{
+  "name": "saml-test",
+  "version": "0.0.0",
+  "description": "SAMLTest",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever index.js",
+    "test": "npm run ava",
+    "ava": "NODE_ENV=test nyc ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abratnap/saml-test.git"
+  },
+  "keywords": [
+    "saml",
+    "testing"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "config": "^1.25.1",
+    "connect-redis": "^3.3.0",
+    "express": "^4.15.2",
+    "express-session": "^1.15.3",
+    "forever": "^0.15.3",
+    "js-yaml": "^3.8.4",
+    "le_node": "^1.7.0",
+    "lodash": "^4.17.4",
+    "node-dir": "^0.1.17",
+    "nunjucks": "^3.0.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-saml": "^0.15.0",
+    "redis": "^2.7.1",
+    "uuid": "^3.0.1",
+    "validator": "^7.0.0",
+    "winston": "^2.3.1",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.24"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "ava": "^0.18.2",
+    "ava-spec": "^1.1.0",
+    "base-64": "^0.1.0",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "commander": "^2.9.0",
+    "coveralls": "^2.13.0",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.18.0",
+    "eslint-config-punchcard": "^1.1.1",
+    "eslint-config-xo-space": "^0.16.0",
+    "eslint-plugin-ava": "^4.2.0",
+    "express-list-endpoints": "^3.0.0",
+    "express-list-middleware": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "eyeglass": "^1.2.1",
+    "faker": "^4.1.0",
+    "fs-extra": "^3.0.1",
+    "ghooks": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-forever-monitor": "^1.0.1",
+    "gulp-svgstore": "^6.1.0",
+    "last-release-git": "0.0.2",
+    "mock-express": "^1.1.0",
+    "nightmare": "^2.10.0",
+    "node-sass": "^4.5.3",
+    "nyc": "^10.2.0",
+    "postcss-loader": "^2.0.5",
+    "proxyquire": "^1.8.0",
+    "punchcard-commit-msg": "^1.1.0",
+    "punchcard-semantic-release": "^2.0.4",
+    "reparo": "^1.1.1-0",
+    "sass-lint": "^1.10.2",
+    "sass-loader": "^6.0.5",
+    "sass-toolkit": "^2.10.2",
+    "semantic-release": "^6.3.2",
+    "source-map": "^0.5.6",
+    "style-loader": "^0.18.2",
+    "supertest": "^3.0.0",
+    "test-console": "^1.0.0",
+    "urlencode": "^1.1.0",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.6.1"
+  },
+  "engines": {
+    "node": "^8.1",
+    "npm": "^5.0"
+  },
+  "nyc": {
+    "include": [
+      "lib/**/*.js",
+      "config/**/*.js",
+      "bin/**/*.js",
+      "index.js"
+    ],
+    "exclude": [
+      "config/production.js"
+    ],
+    "all": true
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.js"
+    ]
+  }
+}
