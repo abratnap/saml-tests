@@ -34,7 +34,7 @@
     "passport-saml": "^0.15.0",
     "redis": "^3.1.1",
     "uuid": "^3.0.1",
-    "validator": "^7.0.0",
+    "validator": "^13.7.0",
     "winston": "^2.3.1",
     "xmldom": "^0.6.0",
     "xpath": "0.0.24"
